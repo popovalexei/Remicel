@@ -133,10 +133,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* #features i:hover {
-  color: #e384ff;
-} */
-
 /* About Us Section */
 
 .about-title {
@@ -211,8 +207,9 @@ p {
 .commission-column {
   padding: 3% 2%;
 }
-#commission .section-heading{
-  margin-bottom: 20px;
+#commission .section-heading {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 /* Footer section */
@@ -232,15 +229,14 @@ p {
 
 /* EasyServed Boxes */
 
-
-.boxes-container{
+.boxes-container {
   margin-top: 30px;
 }
-.box-img{
+.box-img {
   width: 60px;
   height: auto;
 }
-.box-title{
+.box-title {
   font-size: 18px;
   font-weight: bold;
   color: #172e53;
