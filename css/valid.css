@@ -1,0 +1,18 @@
+body {
+    background-color: #E384FF;
+    color: aliceblue;
+    text-align: center;
+}
+
+p {
+    color: #E384FF;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #fff;
+  }
