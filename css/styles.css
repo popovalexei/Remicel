@@ -211,6 +211,9 @@ p {
 .commission-column {
   padding: 3% 2%;
 }
+#commission .section-heading{
+  margin-bottom: 20px;
+}
 
 /* Footer section */
 
@@ -225,6 +228,24 @@ p {
 .container-fluid a {
   text-decoration: none;
   color: inherit;
+}
+
+/* EasyServed Boxes */
+
+
+.boxes-container{
+  margin-top: 30px;
+}
+.box-img{
+  width: 60px;
+  height: auto;
+}
+.box-title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #172e53;
+  min-height: 70px;
+  margin-top: 10px;
 }
 
 /* Media queries */
