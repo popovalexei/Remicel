@@ -6,6 +6,13 @@ $(document).ready(function () {
   });
 });
 
+// Learn More button scroll to section functionality
+const learnMoreButton = document.querySelector('.learnMore-button');
+const commissionSection = document.querySelector('#commission');
+learnMoreButton.addEventListener('click', () => {
+  commissionSection.scrollIntoView({ behavior: 'smooth' });
+});
+
 // Validation form
 
 $('#myForm').validate({
