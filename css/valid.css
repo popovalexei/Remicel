@@ -1,18 +1,18 @@
 body {
-    background-color: #E384FF;
-    color: aliceblue;
-    text-align: center;
+  background-color: #172e53;
+  color: aliceblue;
+  text-align: center;
 }
 
 p {
-    color: #E384FF;
+  color: #ea4655;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .container {
-    background-color: #fff;
-  }
+  background-color: #fff;
+}

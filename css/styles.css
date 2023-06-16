@@ -73,7 +73,7 @@ p {
   font-size: 1.2rem;
 }
 
-/* Download buttons */
+/* LearnMore button */
 .learnMore-button {
   margin: 5% 3% 5% 0;
 }
@@ -93,10 +93,8 @@ p {
 .title-image {
   width: 90%;
   max-width: 800px;
-  /* transform: rotate(15deg); */
   position: absolute;
   right: 5%;
-  /* top: 5%; */
 }
 
 .image-div {
@@ -104,6 +102,13 @@ p {
 }
 
 /* Features section */
+
+.sloganText {
+  font-family: 'Roboto Mono', monospace;
+  color: #ea4655;
+  font-weight: lighter;
+  padding: 30px 10px;
+}
 
 #services {
   position: relative;
@@ -135,6 +140,10 @@ p {
 
 /* About Us Section */
 
+#about {
+  padding-bottom: 20px;
+}
+
 .about-title {
   padding: 15px 0;
 }
@@ -151,7 +160,7 @@ p {
 /* Testimonial section */
 
 #testimonials {
-  min-height: 540px;
+  min-height: 600px;
 }
 
 .testimonial-text {
