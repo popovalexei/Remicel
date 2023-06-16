@@ -14,7 +14,7 @@ h6 {
 }
 
 p {
-  color: #8f8f8f;
+  color: #454545;
 }
 
 /* Headings */
@@ -160,7 +160,7 @@ p {
 /* Testimonial section */
 
 #testimonials {
-  min-height: 600px;
+  min-height: 490px;
 }
 
 .testimonial-text {
@@ -234,6 +234,14 @@ p {
 .container-fluid a {
   text-decoration: none;
   color: inherit;
+}
+
+footer .sloganText {
+  margin: 0;
+}
+
+.social {
+  padding: 4% 15%;
 }
 
 /* EasyServed Boxes */
