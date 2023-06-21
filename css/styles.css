@@ -144,17 +144,48 @@ p {
   padding-bottom: 20px;
 }
 
-.about-title {
-  padding: 15px 0;
-}
-
 .about-text {
   text-align: center;
-  margin: 25px 50px;
+  margin: 25px 125px;
 }
 
-.ps {
-  font-style: italic;
+.section {
+  display: flex;
+  align-items: center; /* this will center the text vertically */
+  clear: both;
+  overflow: auto;
+  margin: 20px 0;
+}
+
+img.left {
+  order: 0; /* this will make the image appear before the text */
+  margin-right: 20px;
+  width: 35%;
+}
+
+img.right {
+  order: 1; /* this will make the image appear after the text */
+  margin-left: 20px;
+  width: 35%;
+}
+
+img.right {
+  float: right;
+  margin-left: 20px;
+}
+
+img.left,
+img.right {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.section p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 /* Testimonial section */
