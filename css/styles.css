@@ -73,6 +73,34 @@ p {
   font-size: 1.2rem;
 }
 
+.nav-item.commission{
+  position: relative;
+}
+
+.menu-dropdown-holder{
+  max-height: 0;
+  overflow: hidden;
+  transition: all .7s;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-dropdown{
+  list-style-type: none;
+  padding: 0;
+}
+
+.commission:hover .menu-dropdown-holder{
+  max-height: 130px;
+}
+
+.menu-dropdown-item{
+  text-align: center;
+  padding: 10px;
+}
+
 /* Download buttons */
 .download-button {
   margin: 5% 3% 5% 0;
@@ -91,12 +119,16 @@ p {
 /* Title image */
 
 .title-image {
-  width: 90%;
+  /* width: 90%;
   max-width: 800px;
-  /* transform: rotate(15deg); */
+  transform: rotate(15deg);
   position: absolute;
   right: 5%;
-  /* top: 5%; */
+  top: 5%; */
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .image-div {
@@ -156,6 +188,8 @@ p {
 
 #testimonials {
   min-height: 540px;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial-text {
@@ -246,6 +280,21 @@ p {
   color: #172e53;
   min-height: 70px;
   margin-top: 10px;
+}
+
+/* Scroll to top button*/
+
+.scroll-to-top{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 /* Media queries */
