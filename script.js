@@ -37,3 +37,31 @@ $('#myForm').validate({
     form.submit();
   },
 });
+
+
+//
+
+// Get the button element by ID or class
+const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+// Add a click event listener to the button
+scrollToTopButton.addEventListener('click', () => {
+  // Scroll smoothly to the top of the page
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Add a scroll event listener to show/hide the button
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollPosition > 50) {
+    // If scrolled down 50 pixels or more, show the button
+    scrollToTopButton.style.display = 'block';
+  } else {
+    // Otherwise, hide the button
+    scrollToTopButton.style.display = 'none';
+  }
+});
