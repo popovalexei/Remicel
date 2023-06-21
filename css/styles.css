@@ -169,10 +169,10 @@ img.right {
   width: 35%;
 }
 
-img.right {
+/* img.right {
   float: right;
   margin-left: 20px;
-}
+} */
 
 img.left,
 img.right {
