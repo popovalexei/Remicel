@@ -73,30 +73,30 @@ p {
   font-size: 1.2rem;
 }
 
-.nav-item.commission{
+.nav-item.products {
   position: relative;
 }
 
-.menu-dropdown-holder{
+.menu-dropdown-holder {
   max-height: 0;
   overflow: hidden;
-  transition: all .7s;
+  transition: all 0.7s;
   position: absolute;
   top: 45px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.menu-dropdown{
+.menu-dropdown {
   list-style-type: none;
   padding: 0;
 }
 
-.commission:hover .menu-dropdown-holder{
+.products:hover .menu-dropdown-holder {
   max-height: 130px;
 }
 
-.menu-dropdown-item{
+.menu-dropdown-item {
   text-align: center;
   padding: 10px;
 }
@@ -277,22 +277,33 @@ img.right {
   transform: scale(1.4);
 }
 
-/* Commission Section */
+/* Products Section */
 
-#comission i {
+.products i {
   color: #ea4655;
 }
 
-#commission {
+.products {
   padding: 100px;
 }
 
-.commission-column {
+.products-column {
   padding: 3% 2%;
 }
-#commission .section-heading {
+.products .section-heading {
   margin-bottom: 50px;
   padding-bottom: 20px;
+}
+
+.separator {
+  height: 45px;
+  background-color: #172e53;
+}
+
+.product-logo {
+  max-width: 100%;
+  height: 200px;
+  width: auto;
 }
 
 /* Footer section */
@@ -337,7 +348,7 @@ footer .sloganText {
 
 /* Scroll to top button*/
 
-.scroll-to-top{
+.scroll-to-top {
   position: fixed;
   bottom: 50px;
   right: 50px;
