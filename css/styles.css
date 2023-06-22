@@ -73,7 +73,7 @@ p {
   font-size: 1.2rem;
 }
 
-.nav-item.products {
+.nav-item.menu-products {
   position: relative;
 }
 
@@ -92,7 +92,7 @@ p {
   padding: 0;
 }
 
-.products:hover .menu-dropdown-holder {
+.menu-products:hover .menu-dropdown-holder {
   max-height: 130px;
 }
 
