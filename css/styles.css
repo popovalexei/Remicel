@@ -279,20 +279,31 @@ img.right {
 
 /* Products Section */
 
-#products i {
+.products i {
   color: #ea4655;
 }
 
-#products {
+.products {
   padding: 100px;
 }
 
 .products-column {
   padding: 3% 2%;
 }
-#products .section-heading {
+.products .section-heading {
   margin-bottom: 50px;
   padding-bottom: 20px;
+}
+
+.separator {
+  height: 45px;
+  background-color: #172e53;
+}
+
+.product-logo {
+  max-width: 100%;
+  height: 200px;
+  width: auto;
 }
 
 /* Footer section */
