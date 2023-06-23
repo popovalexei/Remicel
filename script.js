@@ -6,12 +6,30 @@ $(document).ready(function () {
   });
 });
 
-// Learn More button scroll to section functionality
-const learnMoreButton = document.querySelector('.learnMore-button');
-const commissionSection = document.querySelector('#commission');
-learnMoreButton.addEventListener('click', () => {
-  commissionSection.scrollIntoView({ behavior: 'smooth' });
-});
+// This is VanillaJS code for the services section
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   var servicesBoxes = document.querySelectorAll('.services-box');
+
+//   function handleMouseEnter() {
+//     this.classList.add('selected');
+
+//     var siblings = Array.from(this.parentNode.children).filter(function (
+//       element
+//     ) {
+//       return element !== this;
+//     },
+//     this);
+
+//     siblings.forEach(function (sibling) {
+//       sibling.classList.remove('selected');
+//     });
+//   }
+
+//   servicesBoxes.forEach(function (box) {
+//     box.addEventListener('mouseenter', handleMouseEnter);
+//   });
+// });
 
 // Validation form
 
@@ -38,7 +56,6 @@ $('#myForm').validate({
   },
 });
 
-
 //
 
 // Get the button element by ID or class
@@ -49,14 +66,15 @@ scrollToTopButton.addEventListener('click', () => {
   // Scroll smoothly to the top of the page
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: 'smooth',
   });
 });
 
 // Add a scroll event listener to show/hide the button
 window.addEventListener('scroll', () => {
-  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  
+  const scrollPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+
   if (scrollPosition > 50) {
     // If scrolled down 50 pixels or more, show the button
     scrollToTopButton.style.display = 'block';
