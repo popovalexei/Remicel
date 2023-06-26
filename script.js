@@ -83,3 +83,12 @@ window.addEventListener('scroll', () => {
     scrollToTopButton.style.display = 'none';
   }
 });
+
+
+// Products menu open/close
+
+var productsMenu = document.getElementById("menu-products");
+function openMenu(){
+  productsMenu.classList.toggle("expanded");
+}
+productsMenu.addEventListener("click", openMenu);

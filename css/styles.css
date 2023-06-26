@@ -75,6 +75,7 @@ p {
 
 .nav-item.menu-products {
   position: relative;
+  cursor: pointer;
 }
 
 .menu-dropdown-holder {
@@ -92,8 +93,32 @@ p {
   padding: 0;
 }
 
-.menu-products:hover .menu-dropdown-holder {
+.menu-products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-products.expanded .menu-dropdown-holder {
   max-height: 130px;
+}
+
+.menu-products:after{
+  content:"";
+  background-image: url("../images/icons/arrow-up.svg");
+  background-size: contain;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-left: 10px;
+  transform: rotate(180deg);
+  transition: all .7s;
+}
+
+.menu-products.expanded:after{
+  transform: rotate(0);
 }
 
 .menu-dropdown-item {
@@ -368,4 +393,37 @@ footer .sloganText {
     position: static;
     transform: rotate(0);
   }
+}
+
+@media only screen and (max-width: 991px) {
+  .menu-dropdown-holder{
+    position: unset;
+    transform: unset;
+    order: 1;
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .big-heading{
+    font-size: 35px;
+  }
+
+  .testimonial-text{
+    font-size: 22px;
+  }
+
+  .about-text{
+    margin: 25px 20px
+  }
+
+  .products{
+    padding: 25px 20px;
+  }
+
+  .product-text{
+    max-width: 100%;
+  }
+
 }
