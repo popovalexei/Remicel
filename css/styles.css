@@ -211,7 +211,7 @@ p {
 .section {
   display: flex;
   align-items: center;
-  overflow: auto;
+  overflow: hidden;
   margin: 20px 0;
 }
 
