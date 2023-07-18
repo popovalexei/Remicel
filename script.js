@@ -84,40 +84,49 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
 // Products menu open/close
 
-var productsMenu = document.getElementById("menu-products");
-function openMenuProducts(){
-  productsMenu.classList.toggle("expanded");
+var productsMenu = document.getElementById('menu-products');
+function openMenuProducts() {
+  productsMenu.classList.toggle('expanded');
 }
-productsMenu.addEventListener("click", openMenuProducts);
-
+productsMenu.addEventListener('click', openMenuProducts);
 
 // Clients menu open/close
 
-var clientsMenu = document.getElementById("menu-clients");
-function openMenuClients(){
-  clientsMenu.classList.toggle("expanded");
+var clientsMenu = document.getElementById('menu-clients');
+function openMenuClients() {
+  clientsMenu.classList.toggle('expanded');
 }
-clientsMenu.addEventListener("click", openMenuClients);
-
+clientsMenu.addEventListener('click', openMenuClients);
 
 // Clients menu open/close
 
-var languageMenu = document.getElementById("language-selector");
-function openMenuLanguages(){
-  languageMenu.classList.toggle("expanded");
+var languageMenu = document.getElementById('language-selector');
+function openMenuLanguages() {
+  languageMenu.classList.toggle('expanded');
 }
-languageMenu.addEventListener("click", openMenuLanguages);
-
+languageMenu.addEventListener('click', openMenuLanguages);
 
 // Change Language Dropdown
 
-var currentLang = document.getElementById("current-language");
-var languages = document.querySelectorAll("#language-selector li");
-languages.forEach((lang)=>{
-  lang.addEventListener("click",()=>{
+var currentLang = document.getElementById('current-language');
+var languages = document.querySelectorAll('#language-selector li');
+languages.forEach((lang) => {
+  lang.addEventListener('click', () => {
     currentLang.textContent = lang.textContent;
-  })
+    const img = document.createElement('img');
+    if (currentLang.textContent === 'BG') {
+      img.setAttribute('src', 'images/flags/bulg-flag.svg');
+      currentLang.appendChild(img);
+    } else if (currentLang.textContent === 'NL') {
+      img.setAttribute('src', 'images/flags/neth-flag.svg');
+      currentLang.appendChild(img);
+    } else if (currentLang.textContent === 'EN') {
+      img.setAttribute('src', 'images/flags/engl-flag.svg');
+      currentLang.appendChild(img);
+    }
+  });
+
+  document.getElementById('en-flag').style.display = '';
 });

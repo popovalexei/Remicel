@@ -75,7 +75,7 @@ p {
 
 .nav-item.menu-products,
 .nav-item.menu-clients,
-.nav-item.language-selector{
+.nav-item.language-selector {
   position: relative;
   cursor: pointer;
 }
@@ -98,7 +98,7 @@ p {
 
 .menu-products,
 .menu-clients,
-.language-selector{
+.language-selector {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,9 +113,9 @@ p {
 
 .menu-products:after,
 .menu-clients:after,
-.language-selector:after{
-  content:"";
-  background-image: url("../images/icons/arrow-up.svg");
+.language-selector:after {
+  content: '';
+  background-image: url('../images/icons/arrow-up.svg');
   background-size: contain;
   background-position: center;
   width: 16px;
@@ -123,12 +123,12 @@ p {
   display: block;
   margin-left: 10px;
   transform: rotate(180deg);
-  transition: all .7s;
+  transition: all 0.7s;
 }
 
 .menu-products.expanded:after,
 .menu-clients.expanded:after,
-.language-selector.expanded:after{
+.language-selector.expanded:after {
   transform: rotate(0);
 }
 
@@ -137,29 +137,20 @@ p {
   padding: 10px;
 }
 
-.language-selector li{
+.language-selector li,
+#current-language {
   display: flex;
   align-items: center;
 }
-.language-selector li img{
+.language-selector li img,
+#current-language img {
   width: auto;
   height: 24px;
   margin-left: 7px;
 }
 
-/* #current-language{
-  display: flex;
-  align-items: center;
-}
-
-#current-language:after{
-  content:"";
-  background-image: url("../images/flags/engl-flag.svg");
-  width: 24px;
-  height: 24px;
-  display: block;
-  background-size: contain;
-  margin-left: 10px;
+/* #current-language img {
+  display: none;
 } */
 
 /* LearnMore button */
@@ -296,7 +287,7 @@ img.right {
   min-height: 520px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .testimonial-text {
@@ -433,7 +424,7 @@ footer .sloganText {
 }
 
 @media only screen and (max-width: 991px) {
-  .menu-dropdown-holder{
+  .menu-dropdown-holder {
     position: unset;
     transform: unset;
     order: 1;
@@ -442,25 +433,23 @@ footer .sloganText {
 }
 
 @media only screen and (max-width: 576px) {
-
-  .big-heading{
+  .big-heading {
     font-size: 35px;
   }
 
-  .testimonial-text{
+  .testimonial-text {
     font-size: 22px;
   }
 
-  .about-text{
-    margin: 25px 20px
+  .about-text {
+    margin: 25px 20px;
   }
 
-  .products{
+  .products {
     padding: 25px 20px;
   }
 
-  .product-text{
+  .product-text {
     max-width: 100%;
   }
-
 }
