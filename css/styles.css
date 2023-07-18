@@ -141,17 +141,15 @@ p {
 #current-language {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 .language-selector li img,
 #current-language img {
   width: auto;
   height: 24px;
   margin-left: 7px;
 }
-
-/* #current-language img {
-  display: none;
-} */
 
 /* LearnMore button */
 .learnMore-button {
