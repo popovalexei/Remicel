@@ -88,7 +88,36 @@ window.addEventListener('scroll', () => {
 // Products menu open/close
 
 var productsMenu = document.getElementById("menu-products");
-function openMenu(){
+function openMenuProducts(){
   productsMenu.classList.toggle("expanded");
 }
-productsMenu.addEventListener("click", openMenu);
+productsMenu.addEventListener("click", openMenuProducts);
+
+
+// Clients menu open/close
+
+var clientsMenu = document.getElementById("menu-clients");
+function openMenuClients(){
+  clientsMenu.classList.toggle("expanded");
+}
+clientsMenu.addEventListener("click", openMenuClients);
+
+
+// Clients menu open/close
+
+var languageMenu = document.getElementById("language-selector");
+function openMenuLanguages(){
+  languageMenu.classList.toggle("expanded");
+}
+languageMenu.addEventListener("click", openMenuLanguages);
+
+
+// Change Language Dropdown
+
+var currentLang = document.getElementById("current-language");
+var languages = document.querySelectorAll("#language-selector li");
+languages.forEach((lang)=>{
+  lang.addEventListener("click",()=>{
+    currentLang.textContent = lang.textContent;
+  })
+});
