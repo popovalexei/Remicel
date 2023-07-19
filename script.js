@@ -110,23 +110,41 @@ languageMenu.addEventListener('click', openMenuLanguages);
 
 // Change Language Dropdown
 
-var currentLang = document.getElementById('current-language');
-var languages = document.querySelectorAll('#language-selector li');
-languages.forEach((lang) => {
-  lang.addEventListener('click', () => {
-    currentLang.textContent = lang.textContent;
-    const img = document.createElement('img');
-    if (currentLang.textContent === 'BG') {
-      img.setAttribute('src', 'images/flags/bulg-flag.svg');
-      currentLang.appendChild(img);
-    } else if (currentLang.textContent === 'NL') {
-      img.setAttribute('src', 'images/flags/neth-flag.svg');
-      currentLang.appendChild(img);
-    } else if (currentLang.textContent === 'EN') {
-      img.setAttribute('src', 'images/flags/engl-flag.svg');
-      currentLang.appendChild(img);
+function changeLanguage(lang) {
+  // Get all elements that need to be translated
+  const translatableElements = document.querySelectorAll('[data-i18n]');
+
+  translatableElements.forEach((elem) => {
+    const key = elem.getAttribute('data-i18n');
+
+    if (translations[lang] && translations[lang][key]) {
+      elem.textContent = translations[lang][key];
     }
   });
+}
 
-  document.getElementById('en-flag').style.display = '';
+var currentLang = document.getElementById('current-language');
+var languages = document.querySelectorAll(
+  '#language-selector .menu-dropdown-item'
+);
+languages.forEach((lang) => {
+  lang.addEventListener('click', () => {
+    const selectedLang = lang.textContent.trim();
+    currentLang.textContent = selectedLang;
+    const img = document.createElement('img');
+
+    if (selectedLang === 'BG') {
+      img.setAttribute('src', 'images/flags/bulg-flag.svg');
+      currentLang.appendChild(img);
+      changeLanguage('BG');
+    } else if (selectedLang === 'NL') {
+      img.setAttribute('src', 'images/flags/neth-flag.svg');
+      currentLang.appendChild(img);
+      changeLanguage('NL');
+    } else if (selectedLang === 'EN') {
+      img.setAttribute('src', 'images/flags/engl-flag.svg');
+      currentLang.appendChild(img);
+      changeLanguage('EN');
+    }
+  });
 });
