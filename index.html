@@ -50,10 +50,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#services" data-i18n="aboutUs">About Us</a>
+              <a class="nav-link" href="#services" data-i18n="aboutUsNav">About Us</a>
             </li>
             <li id="menu-products" class="nav-item menu-products">
-              <a class="nav-link">Products</a>
+              <a class="nav-link" data-i18n="productsNav">Products</a>
               <div class="menu-dropdown-holder">
                 <ul class="menu-dropdown">
                   <li class="menu-dropdown-item"><a href="#products">EasyServed</a></li>
@@ -62,7 +62,7 @@
               </div>
             </li>
             <li id="menu-clients" class="nav-item menu-clients">
-              <a class="nav-link">Clients</a>
+              <a class="nav-link" data-i18n="clientsNav">Clients</a>
               <div class="menu-dropdown-holder">
                 <ul class="menu-dropdown">
                   <li class="menu-dropdown-item"><a href="https://www.easypayments.be/nl/"
@@ -71,7 +71,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" data-i18n="contactNav">Contact</a>
             </li>
             <li id="language-selector" class="nav-item language-selector">
               <a id="current-language" class="nav-link">EN
@@ -96,7 +96,7 @@
           <h1 class="big-heading" data-i18n="heading">Meet our newest product EasyServed</h1>
           <!-- download buttons -->
           <button type="button" class="btn btn-outline-light btn-lg learnMore-button">
-            <a href="#products">Learn More</a>
+            <a href="#products" data-i18n="learnMore">Learn More</a>
           </button>
         </div>
         <div class="col-lg-6 image-div">
@@ -113,15 +113,16 @@
       <div class="row">
         <div class="services-box col-lg-4">
           <i class="fa-solid fa-circle-check fa-4x"></i>
-          <h3 class="services-title">IT Solutions and Consulting</h3>
-          <p>Our IT Solutions and Consulting services empower businesses with comprehensive guidance, tailored
+          <h3 class="services-title" data-i18n="firstServiceTitle">IT Solutions and Consulting</h3>
+          <p data-i18n="firstServiceContent">Our IT Solutions and Consulting services empower businesses with
+            comprehensive guidance, tailored
             strategies, and cutting-edge technologies to optimize IT infrastructure, drive growth, and achieve new
             heights in the digital landscape.</p>
         </div>
 
         <div class="services-box selected col-lg-4">
           <i class="fa-solid fa-bullseye fa-4x"></i>
-          <h3 class="services-title">Web & Software Development</h3>
+          <h3 class="services-title" data-i18n="secondServiceTitle">Web & Software Development</h3>
           <p>We create captivating, responsive websites that transform your ideas into engaging online experiences,
             leveraging the latest technologies for seamless user interaction.</p>
         </div>
@@ -140,14 +141,15 @@
 
   <section class="white-section" id="about">
     <div class="colored-section">
-      <h3 class="sloganText">Inspiring IT Solutions. Limitless Creativity.</h3>
+      <h3 class="sloganText" data-i18n="slogan">Inspiring IT Solutions. Limitless Creativity.</h3>
     </div>
 
     <div class="about-text">
 
       <div class="section">
         <img class="left" src="./images/aboutUs1.jpg" alt="image1">
-        <p>At Remicel, we are a leading provider of IT solutions, specializing in IT consulting, web development, and
+        <p data-i18n="firstAboutUsContent">At Remicel, we are a leading provider of IT solutions, specializing in IT
+          consulting, web development, and
           software development. With a passion for delivering exceptional results, we empower businesses to thrive in
           the
           digital landscape.</p>
@@ -155,14 +157,16 @@
 
       <div class="section">
         <img class="right" src="./images/aboutUs2.jpg" alt="image2">
-        <p> With a customer-centric approach, we prioritize building lasting relationships and understanding the unique
+        <p data-i18n="secondAboutUsContent"> With a customer-centric approach, we prioritize building lasting
+          relationships and understanding the unique
           needs of each client. Our team of skilled professionals combines technical expertise with limitless creativity
           to craft innovative and scalable solutions tailored to your specific requirements.</p>
       </div>
 
       <div class="section">
         <img class="left" src="./images/aboutUs3.jpg" alt="image3">
-        <p> We believe in the power of collaboration and work closely with our clients to analyze their challenges,
+        <p data-i18n="thirdAboutUsContent"> We believe in the power of collaboration and work closely with our clients
+          to analyze their challenges,
           design
           strategies, and implement cutting-edge technologies. Our goal is to optimize your IT infrastructure, drive
           growth, and enhance your competitive edge.</p>
@@ -170,7 +174,8 @@
 
       <div class="section">
         <img class="right" src="./images/aboutUs4.jpg" alt="image4">
-        <p> With our comprehensive IT consulting services, we provide strategic guidance, leveraging our industry
+        <p data-i18n="fourthAboutUsContent"> With our comprehensive IT consulting services, we provide strategic
+          guidance, leveraging our industry
           insights
           to help you make informed decisions and navigate the ever-evolving technological landscape. Our web
           development
@@ -181,7 +186,8 @@
 
       <div class="section">
         <img class="left" src="./images/aboutUs5.jpg" alt="image5">
-        <p> At Remicel, we are committed to excellence, reliability, and innovation. Partner with us to unlock the full
+        <p data-i18n="fithAboutUsContent"> At Remicel, we are committed to excellence, reliability, and innovation.
+          Partner with us to unlock the full
           potential of your business through inspiring IT solutions and limitless creativity.</p>
       </div>
 
@@ -196,7 +202,7 @@
       <div class="carousel-inner">
 
         <div class="carousel-item container-fluid">
-          <h2 class="testimonial-text">
+          <h2 class="testimonial-text" data-i18n="firstTestimonial">
             “Remicel's EasyServed solution transformed our business. The QR code feature lets guests order easily,
             saving time and reducing staff. Integration with our cash register system boosts operational efficiency."
           </h2>
@@ -207,7 +213,7 @@
         </div>
 
         <div class="carousel-item active container-fluid">
-          <h2 class="testimonial-text">
+          <h2 class="testimonial-text" data-i18n="secondTestimonial">
             “MyTimo's clear seating plan stimulates maximum occupancy and ultimately generates more revenue. Works
             amazingly fast, thanks to the automatic system of Timo.”
           </h2>
@@ -218,7 +224,7 @@
 
 
         <div class="carousel-item container-fluid">
-          <h2 class="testimonial-text">
+          <h2 class="testimonial-text" data-i18n="secondTestimonial">
             “During the corona crisis, we had to adapt creatively. We quickly established a pop-up terrace, thanks to
             Remicel's efficient ordering solution. EasyServed is fast, user-friendly, and highly recommended.”
           </h2>
@@ -241,7 +247,7 @@
 
   <section class="white-section products" id="products">
     <img class="product-logo" src="./images/easyservedLogoNew.png" alt="EasyServed logo">
-    <p class="product-text">
+    <p class="product-text" data-i18n="easyServedDescription">
       With EasyServed you start easily and quickly with your own ordering site. Your guests place their order via their
       smartphone, tablet or computer, which they then pick up or have delivered. You can then track your incoming orders
       online, via a receipt printer or linked to your POS system.
@@ -254,26 +260,30 @@
       <div class="boxes-container row">
         <div class="box col-lg-3">
           <img src="images/icons/cart-icon.svg" class="box-img">
-          <div class="box-title">Easy online ordering & selling</div>
-          <p class="box-desc">Thanks to the Qr code, your customers can order very easily and conveniently from home or
+          <div class="box-title" data-i18n="firstEasyServedTitle">Easy online ordering & selling</div>
+          <p class="box-desc" data-i18n="firstEasyServedContent">Thanks to the Qr code, your customers can order very
+            easily and conveniently from home or
             on location.</p>
         </div>
         <div class="box col-lg-3">
           <img src="images/icons/monitor-icon.svg" class="box-img">
-          <div class="box-title">Personalized website</div>
-          <p class="box-desc">A professional and completely personalized website without further worries and all
+          <div class="box-title" data-i18n="secondEasyServedTitle">Personalized website</div>
+          <p class="box-desc" data-i18n="secondEasyServedContent">A professional and completely personalized website
+            without further worries and all
             technology, … that’s what EasyServed offers!</p>
         </div>
         <div class="box col-lg-3">
           <img src="images/icons/stats-icon.svg" class="box-img">
-          <div class="box-title">Clear reporting & insight into peak times</div>
-          <p class="box-desc">At any time, with one click an overview of your orders, turnover both per day, month and
+          <div class="box-title" data-i18n="thirdEasyServedTitle">Clear reporting & insight into peak times</div>
+          <p class="box-desc" data-i18n="thirdEasyServedContent">At any time, with one click an overview of your orders,
+            turnover both per day, month and
             per person.</p>
         </div>
         <div class="box col-lg-3">
           <img src="images/icons/clock-icon.svg" class="box-img">
-          <div class="box-title">Quickly up and running</div>
-          <p class="box-desc">Simple back office to get your personalized website up and running immediately.</p>
+          <div class="box-title" data-i18n="fourthEasyServedTitle">Quickly up and running</div>
+          <p class="box-desc" data-i18n="fourthEasyServedContent">Simple back office to get your personalized website up
+            and running immediately.</p>
         </div>
       </div>
 
@@ -289,7 +299,7 @@
 
   <section class="white-section products" id="myTimo">
     <img class="product-logo" src="./images/myTimoLogoTrans.png" alt="myTimo logo">
-    <p class="product-text">
+    <p class="product-text" data-i18n="myTimoDescription">
       Timo is a secure all-in-one system that combines ticket sales with automatic invoicing and bookkeeping, cashless
       payments, stock and data management. Not only is the system secure, it is also extremely
       user-friendly, accurate and affordable.
@@ -301,28 +311,30 @@
       <div class="boxes-container row">
         <div class="box col-lg-3">
           <img src="images/icons/tickets-icon.svg" class="box-img">
-          <div class="box-title">Ticketing System</div>
-          <p class="box-desc">A clear seating plan is the key
+          <div class="box-title" data-i18n="firstMyTimoTitle">Ticketing System</div>
+          <p class="box-desc" data-i18n="firstMyTimoContent">A clear seating plan is the key
             to maximum occupancy. What is more, you can divide your visitors into specific categories and allocate
             different privileges.</p>
         </div>
         <div class="box col-lg-3">
           <img src="images/icons/creditCards.svg" class="box-img">
-          <div class="box-title">Cashless Payments</div>
-          <p class="box-desc">Thanks to the Timo cashless system, your visitors will no longer need cash. Not only is
+          <div class="box-title" data-i18n="secondMyTimoTitle">Cashless Payments</div>
+          <p class="box-desc" data-i18n="secondMyTimoContent">Thanks to the Timo cashless system, your visitors will no
+            longer need cash. Not only is
             this safer, it is also more efficient for your organisation.</p>
         </div>
         <div class="box col-lg-3">
           <img src="images/icons/big-cart.svg" class="box-img">
-          <div class="box-title">Automatic Stock Management</div>
-          <p class="box-desc">Timo can automatically register
+          <div class="box-title" data-i18n="thirdMyTimoTitle">Automatic Stock Management</div>
+          <p class="box-desc" data-i18n="thirdMyTimoContent">Timo can automatically register
             your sales, if you use the cashless system. It is even possible for orders to be placed automatically with
             your suppliers so that your stocks are replenished on time.</p>
         </div>
         <div class="box col-lg-3">
           <img src="images/icons/data-stats.svg" class="box-img">
-          <div class="box-title">Data management</div>
-          <p class="box-desc">You receive a priceless source of information that you can actively use to support your
+          <div class="box-title" data-i18n="fourthMyTimoTitle">Data management</div>
+          <p class="box-desc" data-i18n="fourthMyTimoContent">You receive a priceless source of information that you can
+            actively use to support your
             day-to-day management.</p>
         </div>
       </div>
@@ -336,35 +348,37 @@
 
   <section class="colored-section" id="cta">
     <div class="container-fluid">
-      <h3 class="big-heading">
+      <h3 class="big-heading" data-i18n="callToAction">
         Start Implementing Our Products In Your Business!
       </h3>
     </div>
   </section>
 
-  <!-- Contact us -->
+  <!-- Contact us Form -->
   <section id="contact" class="bg-light py-5 white-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact Us</h2>
-          <p class="lead mb-5">Please fill out the form below to send us a message and we will get back to you as soon
+          <h2 data-i18n="contactUsFormTitle">Contact Us</h2>
+          <p class="lead mb-5" data-i18n="contactUsFormContent">Please fill out the form below to send us a message and
+            we will get back to you as soon
             as possible.</p>
           <form action="valid.html" method="post" id="myForm">
             <div class="mb-3">
-              <label for="name" name="name" class="form-label">Full Name</label>
+              <label for="name" name="name" class="form-label" data-i18n="contactUsFormFullname">Full Name</label>
               <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="mb-3">
-              <label for="email" name="email" class="form-label">Email</label>
+              <label for="email" name="email" class="form-label" data-i18n="contactUsFormEmail">Email</label>
               <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
-              <label for="message" name="message" class="form-label">Message</label>
+              <label for="message" name="message" class="form-label" data-i18n="contactUsFormMessage">Message</label>
               <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
             <div class="text-center">
-              <button type="submit" class="w-100 btn btn-lg btn-outline-dark">Submit</button>
+              <button type="submit" class="w-100 btn btn-lg btn-outline-dark"
+                data-i18n="contactUsFormSubmit">Submit</button>
             </div>
           </form>
         </div>
