@@ -97,22 +97,28 @@ function closeAllMenus() {
 }
 
 function openMenuProducts(event) {
-  closeAllMenus();
   event.stopPropagation();
+  if (!productsMenu.classList.contains('expanded')) {
+    closeAllMenus();
+  }
   productsMenu.classList.toggle('expanded');
 }
 productsMenu.addEventListener('click', openMenuProducts);
 
 function openMenuClients(event) {
-  closeAllMenus();
   event.stopPropagation();
+  if (!clientsMenu.classList.contains('expanded')) {
+    closeAllMenus();
+  }
   clientsMenu.classList.toggle('expanded');
 }
 clientsMenu.addEventListener('click', openMenuClients);
 
 function openMenuLanguages(event) {
-  closeAllMenus();
   event.stopPropagation();
+  if (!languageMenu.classList.contains('expanded')) {
+    closeAllMenus();
+  }
   languageMenu.classList.toggle('expanded');
 }
 languageMenu.addEventListener('click', openMenuLanguages);
@@ -139,11 +145,15 @@ var currentLang = document.getElementById('current-language');
 var languages = document.querySelectorAll(
   '#language-selector .menu-dropdown-item'
 );
+
+var languageMenu = document.getElementById('language-selector');
+
 languages.forEach((lang) => {
-  lang.addEventListener('click', () => {
+  lang.addEventListener('click', (event) => {
     const selectedLang = lang.textContent.trim();
     currentLang.textContent = selectedLang;
     const img = document.createElement('img');
+    event.stopPropagation(); // This will prevent the click event to propagate up to the languageMenu
 
     if (selectedLang === 'BG') {
       img.setAttribute('src', 'images/flags/bulg-flag.svg');
@@ -158,5 +168,8 @@ languages.forEach((lang) => {
       currentLang.appendChild(img);
       changeLanguage('EN');
     }
+
+    // Remove the 'expanded' class from the language menu to close the dropdown
+    languageMenu.classList.remove('expanded');
   });
 });

@@ -89,6 +89,8 @@ p {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  background-color: #172e53;
+  border-radius: 4px;
 }
 
 .menu-dropdown {
@@ -108,7 +110,7 @@ p {
 .menu-products.expanded .menu-dropdown-holder,
 .menu-clients.expanded .menu-dropdown-holder,
 .language-selector.expanded .menu-dropdown-holder {
-  max-height: 130px;
+  max-height: 145px;
 }
 
 .menu-products:after,
@@ -169,12 +171,7 @@ p {
 /* Title image */
 
 .title-image {
-  /* width: 90%;
-  max-width: 800px;
-  transform: rotate(15deg);
-  position: absolute;
-  right: 5%;
-  top: 5%; */
+  margin-top: 20px;
   height: auto;
   width: auto;
   max-width: 100%;
@@ -293,6 +290,11 @@ img.right {
   line-height: 1.5;
 }
 
+.testimonial-text:before,
+.testimonial-text:after {
+  content: '\0022';
+}
+
 /* Products Section */
 
 .products i {
@@ -322,7 +324,7 @@ img.right {
   width: auto;
 }
 
-#products .product-logo {
+#easyServed .product-logo {
   height: 150px;
   margin-bottom: 50px;
 }
@@ -370,6 +372,16 @@ footer .sloganText {
 
 .social {
   padding: 4% 15%;
+}
+
+.footer-links {
+  padding: 20px 0;
+}
+
+.footer-links a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
 }
 
 /* EasyServed Boxes */
