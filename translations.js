@@ -114,11 +114,11 @@ const translations = {
       'Ние в Remicel сме ангажирани с високи постижения, надеждност и иновации. Партнирайте с нас, за да отключите пълния потенциал на вашия бизнес чрез вдъхновяващи IT решения и неограничена креативност.',
     //Testimonials
     firstTestimonial:
-      "Решението EasyServed на Remicel трансформира нашия бизнес. Функцията за QR код позволява на гостите да поръчват лесно, спестявайки време и намалявайки персонала. Интегрирането с нашата касова система повишава оперативната ефективност.",
+      'Решението EasyServed на Remicel трансформира нашия бизнес. Функцията за QR код позволява на гостите да поръчват лесно, спестявайки време и намалявайки персонала. Интегрирането с нашата касова система повишава оперативната ефективност.',
     secondTestimonial:
-      "Ясният план за сядане на MyTimo стимулира максимална заетост и в крайна сметка генерира повече приходи. Работи невероятно бързо, благодарение на автоматичната система на Timo.",
+      'Ясният план за сядане на MyTimo стимулира максимална заетост и в крайна сметка генерира повече приходи. Работи невероятно бързо, благодарение на автоматичната система на Timo.',
     thirdTestimonial:
-      "По време на корона кризата трябваше да се адаптираме творчески. Бързо създадохме изскачаща тераса, благодарение на ефективното решение за поръчки на Remicel. EasyServed е бърз, удобен за потребителя и силно препоръчителен.",
+      'По време на корона кризата трябваше да се адаптираме творчески. Бързо създадохме изскачаща тераса, благодарение на ефективното решение за поръчки на Remicel. EasyServed е бърз, удобен за потребителя и силно препоръчителен.',
     //Products
     //EasyServed
     easyServedDescription:
@@ -176,7 +176,7 @@ const translations = {
     firstServiceTitle: 'IT-oplossingen en advies',
     firstServiceContent:
       'Onze IT-oplossingen en adviesdiensten stellen bedrijven in staat met uitgebreide begeleiding, op maat gemaakte strategieën en geavanceerde technologieën om de IT-infrastructuur te optimaliseren, groei te stimuleren en nieuwe hoogten in het digitale landschap te bereiken.',
-    secondServiceTitle: 'Web- en softwareontwikkeling',
+    secondServiceTitle: 'Web- en software-ontwerp',
     secondServiceContent:
       'We creëren boeiende, responsieve websites die uw ideeën omzetten in boeiende online ervaringen, gebruikmakend van de nieuwste technologieën voor naadloze gebruikersinteractie.',
     thirdServiceTitle: 'Gegarandeerd werken',

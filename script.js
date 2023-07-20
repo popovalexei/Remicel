@@ -87,26 +87,38 @@ window.addEventListener('scroll', () => {
 // Products menu open/close
 
 var productsMenu = document.getElementById('menu-products');
-function openMenuProducts() {
+var clientsMenu = document.getElementById('menu-clients');
+var languageMenu = document.getElementById('language-selector');
+
+function closeAllMenus() {
+  productsMenu.classList.remove('expanded');
+  clientsMenu.classList.remove('expanded');
+  languageMenu.classList.remove('expanded');
+}
+
+function openMenuProducts(event) {
+  closeAllMenus();
+  event.stopPropagation();
   productsMenu.classList.toggle('expanded');
 }
 productsMenu.addEventListener('click', openMenuProducts);
 
-// Clients menu open/close
-
-var clientsMenu = document.getElementById('menu-clients');
-function openMenuClients() {
+function openMenuClients(event) {
+  closeAllMenus();
+  event.stopPropagation();
   clientsMenu.classList.toggle('expanded');
 }
 clientsMenu.addEventListener('click', openMenuClients);
 
-// Clients menu open/close
-
-var languageMenu = document.getElementById('language-selector');
-function openMenuLanguages() {
+function openMenuLanguages(event) {
+  closeAllMenus();
+  event.stopPropagation();
   languageMenu.classList.toggle('expanded');
 }
 languageMenu.addEventListener('click', openMenuLanguages);
+
+// Close all menus when clicking outside of the menus
+window.addEventListener('click', closeAllMenus);
 
 // Change Language Dropdown
 
