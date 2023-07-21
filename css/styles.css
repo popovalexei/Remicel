@@ -182,6 +182,26 @@ p {
   position: relative;
 }
 
+/* Blur images setup */
+
+.blur-load {
+  background-size: cover;
+  background-position: center;
+}
+
+.hidden {
+  background-image: none;
+}
+
+.blur-load.loaded > img {
+  opacity: 1;
+}
+
+.blur-load > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
 /* Services section */
 
 .sloganText {
