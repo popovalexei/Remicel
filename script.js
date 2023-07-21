@@ -6,58 +6,6 @@ $(document).ready(function () {
   });
 });
 
-// This is VanillaJS code for the services section
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   var servicesBoxes = document.querySelectorAll('.services-box');
-
-//   function handleMouseEnter() {
-//     this.classList.add('selected');
-
-//     var siblings = Array.from(this.parentNode.children).filter(function (
-//       element
-//     ) {
-//       return element !== this;
-//     },
-//     this);
-
-//     siblings.forEach(function (sibling) {
-//       sibling.classList.remove('selected');
-//     });
-//   }
-
-//   servicesBoxes.forEach(function (box) {
-//     box.addEventListener('mouseenter', handleMouseEnter);
-//   });
-// });
-
-// Validation form
-
-$('#myForm').validate({
-  rules: {
-    name: {
-      minlength: 2,
-    },
-    email: {
-      email: true,
-    },
-  },
-  messages: {
-    name: {
-      required: 'Please, enter your full name.',
-      minlength: 'Full name at least 2 characters',
-    },
-    email: 'Please, enter your email.',
-    message: 'Please, enter your message.',
-  },
-
-  submitHandler: function (form) {
-    form.submit();
-  },
-});
-
-//
-
 // Get the button element by ID or class
 const scrollToTopButton = document.getElementById('scrollToTopButton');
 
@@ -173,22 +121,3 @@ languages.forEach((lang) => {
     languageMenu.classList.remove('expanded');
   });
 });
-
-
-//lazy loading script here
-const blurDivs = document.querySelectorAll(".blur-load")
-blurDivs.forEach(div => {
-  const img = div.querySelector('img')
-
-  function loaded() {
-    div.classList.add('loaded')
-    div.classList.add('hidden')
-  }
-
-  if (img.complete) {
-    loaded()
-  } else {
-    img.addEventListener('load', loaded)
-  }
-  
-})
